@@ -565,32 +565,13 @@
     // TOAST or interactive alert on CTA button (brand story)
     const discoverBtn = document.getElementById('discoverBtn');
     if(discoverBtn) {
-        discoverBtn.addEventListener('click', () => {
-            // modern subtle notification + sweet scroll to features
-            const notify = document.createElement('div');
-            notify.innerText = '🎧 Echo: Purity meets innovation. Experience sound redefined.';
-            notify.style.position = 'fixed';
-            notify.style.bottom = '30px';
-            notify.style.left = '50%';
-            notify.style.transform = 'translateX(-50%)';
-            notify.style.backgroundColor = '#1e293bb3';
-            notify.style.backdropFilter = 'blur(12px)';
-            notify.style.color = '#bbdeff';
-            notify.style.padding = '12px 24px';
-            notify.style.borderRadius = '60px';
-            notify.style.fontWeight = '500';
-            notify.style.border = '1px solid #3ea5ff';
-            notify.style.zIndex = '999';
-            notify.style.fontSize = '0.9rem';
-            notify.style.boxShadow = '0 5px 18px rgba(0,0,0,0.4)';
-            document.body.appendChild(notify);
-            setTimeout(() => {
-                notify.style.opacity = '0';
-                setTimeout(() => notify.remove(), 500);
-            }, 2800);
-            // smoothly scroll to features
-            document.querySelector('.features').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
+      const discoverBtn = document.getElementById('discoverBtn');
+
+if (discoverBtn) {
+    discoverBtn.addEventListener('click', () => {
+        window.open(' https://listingpro-pearl.vercel.app/', '_blank');
+    });
+}
     }
 
     // shop buttons alert simulation
